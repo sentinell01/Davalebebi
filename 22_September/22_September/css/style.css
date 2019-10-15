@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vh;
+  height: 100vw;
+  /* background: url("https://source.unsplash.com/random/800x400"); */
+  /* background-repeat: no-repeat; */
+}
+
+.Box {
+  width: 100%;
+  font-size: 0px;
+}
+
+.Box__item {
+  width: 50%;
+  height: 200px;
+}
+
+/* utilty classes */
+
+.bg-grey {
+  background: grey;
+}
+.bg-yellowgreen {
+  background: yellowgreen;
+}
+
+.d-i-block {
+  display: inline-block;
+}
+
+/* boxModel */
+
+.boxModel {
+  width: 200px;
+  height: 200px;
+  /* border-radius: 50%; */
+  margin: 20px auto;
+  border: 2px solid black;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+/* .boxModel:first-child {
+  margin-bottom: 40px;
+} */
+.boxModel p {
+  background: #fff;
+}
+
+.boxModel::before {
+  content: "Hello";
+  display: inline;
+}
+.boxModel::after {
+  content: "Hello";
+  display: inline;
+}
